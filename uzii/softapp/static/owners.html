@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AKS Foods | Owner Akshuu Uzii</title>
+  <style>
+    /* === Global Reset === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf3;
+      color: #3a2a20;
+      line-height: 1.6;
+    }
+
+    /* === Header === */
+    header {
+      background-color: #6b1d1d;
+      color: #f7e7ce;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 4px solid #e37b40;
+    }
+
+    header h1 {
+      font-family: 'Georgia', serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    header h1::before {
+      content: "🔥";
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #f7e7ce;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      border-bottom: 2px solid #f7e7ce;
+    }
+
+    /* === Owner Section === */
+    .owner-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 2rem;
+    }
+
+    .owner-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 600px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      overflow: hidden;
+      border: 3px solid #e37b40;
+      padding: 2rem;
+    }
+
+    /* === Small Owner Photo === */
+    .owner-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #e37b40;
+      margin-bottom: 1rem;
+    }
+
+    .owner-info h2 {
+      color: #6b1d1d;
+      font-family: 'Georgia', serif;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .owner-info h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #e37b40;
+      margin-bottom: 1rem;
+    }
+
+    .owner-info p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    /* === Social Links === */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-links img {
+      width: 32px;
+      height: 32px;
+      transition: 0.3s;
+      filter: sepia(40%) hue-rotate(-10deg);
+    }
+
+    .social-links img:hover {
+      transform: scale(1.1);
+      filter: none;
+    }
+
+    /* === Footer === */
+    footer {
+      background-color: #6b1d1d;
+      color: #f7e7ce;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 4px solid #e37b40;
+    }
+
+    /* === Responsive === */
+    @media (max-width: 768px) {
+      .owner-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>AKS Foods</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="owners.html" class="active">Owner</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Owner Section -->
+  <section class="owner-section">
+    <div class="owner-card">
+      <img src="akshuu.jpg" alt="Owner Akshuu Uzii" class="owner-photo">
+
+      <div class="owner-info">
+        <h2>Meet the Owner</h2>
+        <h3>Akshuu Uzii</h3>
+        <p>
+          Welcome to <strong>AKS Foods</strong> — where passion meets flavor and every dish tells a story. 
+          I’m <b>Akshuu Uzii</b>, the proud founder and heart behind our kitchen.
+        </p>
+        <p>
+          Inspired by vintage tastes and fiery creativity, our restaurant combines classic comfort with bold, modern touches.
+          Each flame in our kitchen represents our commitment to quality, warmth, and unforgettable taste.
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AKS Foods | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
